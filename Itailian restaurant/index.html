@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Itailian Restaurant</title>
+        <!-- Tailwind CSS -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!-- Section 1 -->
+        <section class="section1">
+            <!-- Navbar -->
+            <nav class="flex justify-between items-center py-2 md:py-8 lg:py-16 px-[5%]">
+                <!-- bars -->
+                <div class="left md:hidden" onclick="toggleSidebar()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff" class="w-8 h-8">
+                        <path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <div class="righ md:absolute right-0 flex items-center md:pr-[5%] md:2xl:pr-[15%]">
+                    <ul class="flex hidden md:flex space-x-6">
+                        <li class="nav-li 2xl:text-xl">Home</li>
+                        <li class="nav-li">Menu</li>
+                        <li class="nav-li">Our Story</li>
+                        <li class="nav-li">Contact us</li>
+                        <li></li>
+                    </ul>
+                    <!-- search -->
+                    <div class="flex bg-white rounded-full py-1 px-2 cursor-pointer">
+                        <input class="w-40 text-center px-1 focus:outline-none md:focus:w-40 md:w-20 transition-all duration-300" type="text"/>
+                        <!-- icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#000" class="w-5 h-5">
+                            <path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                </div>
+            </nav>
+            <!-- navbar end -->
+            <div class="px-[8%]  md:flex mt-4">
+        <!-- left -->
+        <div>
+            <!-- logo -->
+            <div class="mb-8 2xl:mb-12 flex justify-center md:block">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <!-- tagline -->
+            <p class="font-bold text-center text-white mb-4 2xl:mb-8 md:text-left cursor-pointer text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl title">Italian Food</p>
+            <!-- another tagline -->
+            <p class="font-bold text-center text-white mb-4 2xl:mb-8 md:text-left cursor-pointer 2xl:text-xl">LOREMIPSUM DOLOR</p>
+            <!-- Button -->
+            <div class="cursor-pointer text-center mb-4 2xl:mb-8 md:text-left cursor-pointer">
+                <a href="#" class="bg-white px-12 py-2 text-center rounded-[16px] 2xl:text-xl">READ MORE</a>
+            </div>
+            <!-- paragraph -->
+            <div class="text-center md:text-left cursor-pointer">
+                <p class="text-white 2xl:text-xl">Lorem ipsun dolor sit amet, consectetur adipiscing elit, sed do iusmod tempor incididunt ut labore et dolore magna.</p>
+            </div>
+            <!-- left end -->
+        </div>
+        <!-- right -->
+        <div>
+            <!-- dish -->
+            <div>
+                <img src="img/section1_dish.png" alt="image">
+            </div>
+            <!-- dish item -->
+            <div class="-ml-8 -mt-12">
+                <img src="img/section1_dish_item.png" width="40%" alt="image">
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- section 1 end -->
+    <!-- section 2 -->
+    <section class="px-[8%]">
+        <div class="mb-10">
+            <h1 class="title text-[2rem] md:text-[5rem] text-center mt-16">Lorem Ipsum Dolor</h1>
+            <p class="text-center mt-10 text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+        </div>
+        <!-- menu items -->
+        <div class="md:grid grid-rows-[auto] grid-cols-3 gap-[5%] mt-16">
+                <!-- item 1 -->
+                <div class="bg-white pb-4 mb-12 sm:mb-0">
+                    <!-- image -->
+                    <img class="w-[100%]" src="img/menuItem1.png" alt="image" />
+                    <!-- info -->
+                    <div class="px-4">
+                        <!-- title -->
+                        <h1 class="menu-item-title">Lorem ipsum</h1>
+                        <!-- Description -->
+                        <p class="text-xl">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing...
+                        </p>
+                    </div>
+                </div>
+                <!-- item 2 -->
+                <div class="bg-white pb-4 mb-12 sm:mb-0">
+                    <!-- image -->
+                    <img class="w-[100%]" src="img/menuItem2.png" alt="image" />
+                    <!-- info -->
+                    <div class="px-4">
+                        <!-- title -->
+                        <h1 class="menu-item-title">Lorem ipsum</h1>
+                        <!-- Description -->
+                        <p class="text-xl">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing...
+                        </p>
+                    </div>
+                </div>
+                <!-- item 3 -->
+                <div class="bg-white pb-4">
+                    <!-- image -->
+                    <img class="w-[100%]" src="img/menuItem3.png" alt="image" />
+                    <!-- info -->
+                    <div class="px-4">
+                        <!-- title -->
+                        <h1 class="menu-item-title">Lorem ipsum</h1>
+                        <!-- Description -->
+                        <p class="text-xl">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing...
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- show more btn -->
+            <div class="cursor-pointer flex justify-center mt-2 mb-2">
+                <a href="#" class="btn-black">SHOW MORE</a>
+			        <div>
+    </section>
+    <!-- section 2 end -->
+    <!-- section 3 -->
+   <section class="bg-black py-8 px-[8%]">
+            <h1 class="title text-[2rem] md:text-[5rem] text-center text-white md:my-12">Lorem Ipsum Dolor</h1>
+            <div class="md:flex justify-between">
+            <div class="my-8 md:my-0 md:w-[45%]">
+                <p class="text-center text-white">
+                    Lorem ipsun dolor sit amet, consectetur adipiscing elit, sed do iusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nosturd exercitation ullamco laboris nisi ut aliquip ex quia voluptas sit aspernatur
+                </p>
+            </div>
+            <div class="md:w-[45%]">
+                <p class="text-center text-white">
+                    Lorem ipsun dolor sit amet, consectetur adipiscing elit, sed do iusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nosturd exercitation ullamco laboris nisi ut aliquip ex quia voluptas sit aspernatur
+                </p>
+            </div>
+            </div>
+            <!-- button -->
+            <div class="cursor-pointer text-center mt-12">
+                <a class="px-12 py-2 bg-white font-bold rounded-[16px]">More Info</a>
+            </div>
+   </section> 
+   <!-- section 3 end -->
+   <!-- section4 -->
+        <section class="section3 px-[8%] mt-6 md:mt-12">
+            <!-- container with offers 1-->
+            <div>
+               <!-- offer 1 -->
+               <div class="bg-white sm:flex mb-12 md:mb-4">
+                   <!-- image -->
+                   	<img src="img/menuItem3.png" alt="image" class="sm:w-[50%]"/>
+                   <!-- offer info -->
+                   <div class="sm:w-[50%] grid place-items-center">
+                       <div class="sm:ml-8">
+                        <h1 class="font-medium leading-tight text-2xl md:text-5xl mb-4 mt-4 sm:mt-0">Discount up to 50% on All Excursions</h1>
+                        <p class="font-medium text-xl mb-4">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                        </p>
+                        <a href="#" class="btn-black">READ MORE</a>
+                        </div>
+                   </div>
+               </div>
+               <!-- offer 2 -->
+               <div class="bg-white sm:flex mb-0 md:mb-12 sm:mb-0">
+                   <!-- offer info -->
+                   <div class="hidden sm:grid place-items-center sm:w-[50%]">
+                       <div class="sm:mr-8">
+                        <h1 class="md:text-5xl font-medium leading-tight text-2xl mb-4 mt-4 sm:mt-0">January's promo:Buy 1 Get 1 Free!</h1>
+                        <p class="font-medium text-xl mb-4">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                        </p>
+                        <a href="#" class="bg-black rounded-full py-2 px-6 text-white">READ MORE</a>
+                        </div>
+                   </div>
+                   <!-- image -->
+                   	<img src="img/menuItem2.png" alt="image" class="sm:w-[50%]"/>
+                   <!-- offer info -->
+                   <div class="sm:hidden">
+                        <h1 class="md:text-5xl font-medium leading-tight text-2xl mb-4 mt-4 sm:mt-0">January's promo:Buy 1 Get 1 Free!</h1>
+                        <p class="font-medium text-xl mb-4">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                        </p>
+                        <a href="#" class="btn-black">READ MORE</a>                 
+                   </div>
+               </div>
+            </div>
+        </section>
+        <!-- section 4 end -->
+        <!-- section 5 -->
+    <section class="section1 px-[8%] pt-28 mt-12">
+        <div>
+            <h1 class="title font-bold text-white text-5xl text-center">Lorem Ipsum Dolor Sit Amer</h1>
+            <p class="font-bold text-white mt-10 text-center mb-8">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+            </p>
+            <div class="w-16 h-2 bg-white rounded m-auto"></div>
+        </div>
+        <div class="relative -bottom-16 md:w-[80%] m-auto">
+            <img src="img/pizza.png" alt="pizza">
+        </div>
+    </section>
+    <!-- section 5 end -->
+    <!-- section 6 -->
+	<section class="px-[8%] py-10">
+	    <div class="md:flex justify-between py-10">
+	    <div class="mb-8 md:w-[30%]">
+	        <h1 class="title text-center text-4xl">Lorem ipsum</h1>
+	        <p class="text-center mt-8">
+	            Lorem ipsum dolor sit amet, consecte sectetur adipisicing elit, tation omne ullamco laboris nisi ut aliqolore.
+	        </p>
+	    </div>
+	    <div class="mb-8 md:w-[30%]">
+	        <h1 class="title text-center text-4xl">Lorem ipsum</h1>
+	        <p class="text-center mt-8">
+	            Lorem ipsum dolor sit amet, consecte sectetur adipisicing elit, tation omne ullamco laboris nisi ut aliqolore.
+	        </p>
+	    </div>
+	    <div class="mb-8 md:w-[30%]">
+	        <h1 class="title text-center text-4xl">Lorem ipsum</h1>
+	        <p class="text-center mt-8">
+	            Lorem ipsum dolor sit amet, consecte sectetur adipisicing elit, tation omne ullamco laboris nisi ut aliqolore.
+	        </p>
+	    </div>
+	    </div>
+	    
+	    <div>
+	        <p class="text-center mt-1">
+	            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do ei- usmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+	        </p>
+	    </div>
+	    
+	    <h6 class="text-center mt-8 font-bold">Lorem Ipsum</h6>
+	</section>
+	<!-- section 6 end -->
+	<!-- section 7 -->
+	<section class="py-10 bg-[#1A2423] px-[10%]">
+	    <div>
+	        <h1 class="text-white text-4xl font-bold text-center">Title here</h1>
+	        <p class="text-white text-center my-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+	        <div class="flex justify-center">
+	            <input type="email" placeholder="Your Email" class="rounded-full indent-4 text-sm py-1">
+	            <input type="submit" value="SUBSCRIBE" class="cursor-pointer rounded-full text-white bg-[#4D4E46] px-4 py-1 -ml-8">
+	        </div>
+	    </div>
+	</section>
+	<!-- section 7 end -->
+	<!-- footer -->
+	<footer class="md:px-[8%] my-24">
+        <div class="md:flex justify-between">
+            <!-- left -->
+            <div class="md:w-1/2 px-[8%] md:px-0">
+                <!-- title -->
+                <h4 class="text-3xl mb-2">Title Here</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consecte- tur adipiscing elit. Aliquam at dignis- sim nunc, id maximus ex. Etiam nec dignissim elit, at dignissim enim.
+                </p>
+                <!-- social medial icons -->
+                <div class="flex justify-between itens-center w-[10rem] mt-4">
+                    <a href="#" class="cursor-pointer">
+                        <img src="img/fb_footer.svg" alt="facebook">
+                    </a>
+                    <a href="#" class="-mt-1 cursor-pointer">
+                        <img src="img/twitter_footer.svg" alt="twitter">
+                    </a>
+                    <a href="#" class="cursor-pointer">
+                        <img src="img/ig_footer.svg" alt="instagram">
+                    </a>
+                    <a href="#" class="cursor-pointer">
+                        <img src="img/whatsapp_footer.svg" alt="whatsapp">
+                    </a>
+                </div>
+            </div>
+            <!-- left end -->
+            
+            <!-- right -->
+            <div class="mt-4">
+                <table class="m-auto">
+                    <tr>
+                        <th class="text-left cursor-pointer"><a href="#">About</a></th>
+                        <th class="text-left cursor-pointer"><a href="#">Services</a></th>
+                        <th class="text-left cursor-pointer"><a href="#">Other</a></th>
+                    </tr>
+                    <tr>
+                        <td class="text-left cursor-pointer"><a href="#">History</a></td>
+                        <td class="text-left cursor-pointer"><a href="#">How to order</a></td>
+                        <td class="text-left cursor-pointer"><a href="#">Contact us</a></td>
+                    </tr>
+                    <tr>
+                        <td class="text-left cursor-pointer"><a href="#">Our Team</a></td>
+                        <td class="text-left cursor-pointer"><a href="#">Our product</a></td>
+                        <td class="text-left cursor-pointer"><a href="#">Help</a></td>
+                    </tr>
+                    <tr>
+                        <td class="text-left cursor-pointer"><a href="#">Brand Guidelines &nbsp;</a></td>
+                        <td class="text-left cursor-pointer"><a href="#">Order status</a></td>
+                        <td class="text-left cursor-pointer"><a href="#">Privacy</a></td>
+                    </tr>
+                    <tr>
+                        <td class="text-left cursor-pointer"><a href="#">Terms & <br class="md:hidden"> Conditions &nbsp;</a></td>
+                        <td class="text-left cursor-pointer"><a href="#">Promo</a></td>
+                    </tr>
+                    <tr>
+                        <td class="text-left cursor-pointer"><a href="#">Privacy policy</a></td>
+                        <td class="text-left cursor-pointer"><a href="#">Payment method</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </footer>
+	<!-- footer end -->
+    <!-- sidebar -->
+    <div class="sidebar fixed top-0 left-0 w-full h-full bg-transparent transition-all duration-500 -translate-x-3/4">
+        <div class="shadow-md top-0 left-0 w-[70%] h-full bg-white">
+            <!-- cutbtn -->
+            <div class="text-5xl" onclick="toggleSidebar()">
+                <p class="relative left-[82%]">×</p>
+            </div>
+            <a href="#" class="sidebar-link">Home</a>
+            <a href="#" class="sidebar-link">Menu</a>
+            <a href="#" class="sidebar-link">Our story</a>
+               <a href="#" class="sidebar-link">Contact us</a>
+            </div>
+        </div>
+    </div>
+    <!-- sidebar end -->
+    </body>
+    <script src="js/script.js"></script>
+</html>

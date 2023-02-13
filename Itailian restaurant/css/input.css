@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* font import */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Playball&display=swap');
+
+@font-face {
+  font-family: reey;
+  src: url('../font/Reey-Regular.otf');
+}
+
+/* setting fonts */
+.font{
+    font-family: 'Open Sans', sans-serif;
+}
+.title{
+  font-family: reey;
+}
+
+/* bg image */
+.section1{
+	background-image:url('../img/section1_bg.png');
+	background-size: cover;
+}
+/* tailwind apply directives */
+.nav-li{
+	@apply cursor-pointer text-white font-bold font 2xl:text-2xl;
+}
+
+.menu-item-title{
+	@apply font-bold leading-tight mt-4 mb-2 text-3xl;
+}
+.sidebar-link{
+	@apply font transition-all duration-500 hover:bg-black hover:text-white block text-lg font-bold text-gray-800 p-3 hover:pl-6;
+}
+.btn-black{
+	@apply bg-black rounded-[16px] py-2 px-14 text-white
+}

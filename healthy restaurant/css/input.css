@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*=== section1 ===*/
+.section1{
+    background-image: url('../img/bg1.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.section1,.section1 *{
+    transition: all 0.3s ease-out;
+}
+#bars, #cut-btn{
+    transition: all 2s ;
+}
+/*=== section 1 end ===*/
+
+/*=== section 5 ===*/
+.section5{
+    background-image: url('../img/section5_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom left;
+}
+/*=== section 5 end ===*/
+
+/*=== sidebar ===*/
+.sidebar{
+    transition: transform 0.3s ease-out;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.hiddenmy {
+    transform: translateX(-100%);
+}
+.sidebar a{
+    transition: all 0.5s;
+}
+/*=== sidebar end ===*/
+
+/*=== footer ===*/
+.footer{
+    background-image: url('../img/footerbg.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+/*=== footer end ===*/
+
+/* === fonts === */
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Raleway:wght@700&family=Ubuntu:wght@500&display=swap');
+/* font ubuntu */
+.ubuntu{
+    font-family: 'Ubuntu', sans-serif;
+}
+/* font Lato */
+.lato{
+    font-family: 'Lato', sans-serif;
+}
+/* === fonts end === */
+
+/*=== Tailwind apply directives ===*/
+
+/* navbar */
+.nav-li{
+	@apply cursor-pointer mr-6 text-white text-2xl ubuntu font-medium;
+}
+/* universal padding */
+.uni-padding{
+	@apply px-4 sm:px-14 md:px-24 lg:px-40 xl:px-52 2xl:px-96 py-2 lg:py-6;
+}
+/* sidebabar*/
+.sidebar-li{
+	@apply cursor-pointer hover:bg-[#7287ae] hover:text-white block text-lg  text-gray-800 p-3 hover:pl-6 ubuntu font-medium;
+}
+/* section 2 */
+.menu-item-container{
+	@apply menu-items bg-white pb-4 mb-12 sm:mb-0;
+}
+.menu-item-title{
+    @apply leading-tight mt-2 mb-2 ubuntu font-bold;
+}
+/* section 4 */
+.order-step{
+	@apply inline bg-white rounded-full text-3xl p-2 text-color ubuntu font-bold;
+}
+.order-step-name{
+	@apply text-white text-3xl text-center mt-2 ubuntu font-bold;
+}
+.order-step-text{
+	@apply text-white text-center mt-2 lato font-normal;
+}
+/* footer */
+.footer-heading{
+	@apply leading-tight mt-0 mb-2 text-white ubuntu;
+}
+.footer-li{
+	@apply text-white lato cursor-pointer;
+}
+/* text color */
+.text-color{
+	@apply text-[#7287ae];
+}
+/* background color */
+.bg-color{
+	@apply bg-[#DCEAC0];
+}
+.btn{
+	@apply cursor-pointer text-color rounded-full py-1 px-8 text-white ubuntu;
+}
+/*=== Tailwind apply directives end ===*/
