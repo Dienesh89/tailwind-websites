@@ -40,5 +40,5 @@ Both landing pages feature responsive design, ensuring they look great on variou
 
 These landing pages are created using HTML, styled with Tailwind CSS, and enhanced with JavaScript to provide a smooth user experience.
 
-Feel free to check out the live landing pages for the [Healthy Restaurant](https://dienesh89.github.io/tailwind-websites/healthy_restaurant/) and [Italian Restaurant](https://dienesh89.github.io/tailwind-websites/Itailian_restaurant/) to explore their unique features and designs.
+Feel free to check out the live landing pages for the [Healthy Restaurant](https://dienesh89.github.io/tailwind-websites/healthy restaurant/) and [Italian Restaurant](https://dienesh89.github.io/tailwind-websites/Itailian restaurant/) to explore their unique features and designs.
 
